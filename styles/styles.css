@@ -13,6 +13,7 @@ main{
     padding: 1rem;
     background-color: #eee;
     color: #333;
+    max-width: fit-content;
 }
 main img{
     width: 150px;
@@ -24,16 +25,9 @@ main img{
 }
 h1{
     color: #333;
-    padding: 0%;
-    display: block;
 }
-aside img
-{
-    width: 200px;
-    height: auto;
-}
-aside
-{
+
+aside{
     width: 200px;
     height: auto;
     border : 1px solid rgb(0, 0, 0);
@@ -43,11 +37,10 @@ aside
     text-align: center;
     margin: 1rem;
 }
-p
-{padding:0;}
 
-footer
-{
+p{padding:0;}
+
+footer{
     margin-top:15px ;
     border-top: 1px solid #000;
     text-align: center;
