@@ -6,8 +6,6 @@ nav a{
     color: black;
     padding: 0%;
     display: block;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 main{
@@ -24,7 +22,6 @@ main img{
     height: auto;
     border: #000 solid 1px;
     display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0%;
 }
 h1{
