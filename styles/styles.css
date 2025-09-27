@@ -1,52 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+}
 nav{
-    background-color: lightblue;
-    padding: 1rem;
+    background-color: steelblue;
+    padding: 10px;
 }
 nav a{
     color: black;
-    padding: 0%;
+    padding: 10px;
     display: block;
 }
 
-main{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    max-width: fit-content;
-}
-main img{
-    width: 150px;
-    height: auto;
-    border: #000 solid 1px;
-    display: block;
-    padding: 0%;
-}
 h1{
     color: #333;
+    padding: 0.5rem 0;
+}
+main{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    color: #333;
+
+}
+main img{
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px grey;
+    margin: 0 0 1rem 1rem;
+    float: right;
+
 }
 
 aside{
-    width: 200px;
-    height: auto;
-    border : 1px solid rgb(0, 0, 0);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    width: 20rem;
     margin: 1rem;
+    position: relative;
 }
 aside img{
     width: 200px;
     height: auto;
 }
-p{padding:0;}
+
+aside h2{
+    position: absolute;
+    top:  125px;
+    left: 50px;
+    font-size: medium;
+    color: black
+
+}
+p{
+    padding:0;
+    margin: auto;
+}
 
 footer{
     margin-top:15px ;
     border-top: 1px solid #000;
     text-align: center;
 
+}
+/*class for box*/
+.box{
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1rem ;
+    background-color: #eee;
+    color: #000;
+    clear: right; /* Add this line */
+}
+
+.indent{
+    margin-left: 1rem;
 }
