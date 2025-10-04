@@ -41,6 +41,7 @@
             </div>
             <div class="contact-form border">
                 <h2>Send Us a Message</h2>
+
                 <form action="process_form.php" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -50,16 +51,26 @@
 
                     <fieldset>
                         <legend>Purpose of Message:</legend>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                        <label for="purpose-general">
+                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
+                        <label for="purpose-reservation">
+                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label for="purpose-website">
+                            <input type="radio" id="purpose-website" name="purpose" value="website">
+                            Website Suggestion
+                        </label>
                     </fieldset>
 
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
                     </label>
 
                     <button type="submit">Send Message</button>
