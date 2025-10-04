@@ -244,7 +244,7 @@ footer img {
 
 .contact-form .radio-group {
   margin: 10px 0;
-  padding-left: 105px; /* Aligns radio buttons with inputs */
+  padding-left: 105px;
 }
 
 .contact-form input[type="radio"] {
@@ -253,7 +253,7 @@ footer img {
 
 .contact-form .checkbox-group {
   margin-top: 8px;
-  padding-left: 105px; /* Align checkbox too */
+  padding-left: 105px;
 }
 
 .contact-form button {
