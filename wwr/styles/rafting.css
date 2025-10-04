@@ -32,6 +32,11 @@ header .logo img {
     height: auto;
 }
 
+main h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
 nav ul {
     list-style: none;
     display: flex;              
