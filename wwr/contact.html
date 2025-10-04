@@ -43,36 +43,37 @@
                 <h2>Send Us a Message</h2>
 
                 <form action="process_form.php" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="form-fields">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                    <fieldset>
-                        <legend>Purpose of Message:</legend>
-                        <label for="purpose-general">
-                            <input type="radio" id="purpose-general" name="purpose" value="general" required>
-                            General Inquiry
-                        </label>
-                        <label for="purpose-reservation">
-                            <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
-                        <label for="purpose-website">
-                            <input type="radio" id="purpose-website" name="purpose" value="website">
-                            Website Suggestion
-                        </label>
-                    </fieldset>
+                        <fieldset>
+                            <legend>Purpose of Message:</legend>
+                            <label for="purpose-general">
+                                <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                                General Inquiry
+                            </label>
+                            <label for="purpose-reservation">
+                                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                                Reservation Question
+                            </label>
+                            <label for="purpose-website">
+                                <input type="radio" id="purpose-website" name="purpose" value="website">
+                                Website Suggestion
+                            </label>
+                        </fieldset>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
 
-                    <label for="subscribe">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                        </div>
+                    </div>
                     <button type="submit">Send Message</button>
                 </form>
             </div>
