@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us-Whitewater Rafting | WDD 130</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trips - Whitewater Rafting | WDD 130</title>
     <link rel="stylesheet" href="styles/rafting.css">
-    <meta name="description" content="Whitewater Rafting website for WDD 130">
+    <meta name="description" content="Whitewater Rafting trips and booking information">
     <meta name="author" content="Jan Kristofer Campol">
 </head>
 
@@ -19,41 +19,137 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
+                <li><a href="trips.html" aria-current="page">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Our Exciting Rafting Trips</h1>
-            <div class="trips">
-                <div class="trip">
-                    <img src="images/rafting15_1024.jpg" alt="Gentle River Float" width="300">
+        <section class="trips-layout container">
+            <div class="trips-grid">
+                <article class="trip">
+                    <img src="images/rafting15_1024.jpg" alt="Gentle River Float" class="trip-img">
                     <h2>Gentle River Float</h2>
-                    <p>Perfect for families and beginners, this trip offers a relaxing float down a scenic river with
-                        mild rapids.</p>
-                    <p><strong>Duration:</strong> 2 hours</p>
-                    <p><strong>Price:</strong> $50 per person</p>
-                </div>
-                <div class="trip">
-                    <img src="images/rafting58_600.jpg" alt="Intermediate Rapids" width="300">
+                    <p class="meta"><strong>Class:</strong> I–II • <strong>Duration:</strong> 2 hours • <strong>Price:</strong> $50
+                    </p>
+                    <p>Perfect for families and first-timers. Calm stretches, easy paddling with short, playful ripples.
+                        Guides provide safety briefings and on-water instructions.</p>
+                    <ul class="features">
+                        <li>Minimum age: 6</li>
+                        <li>Group size: up to 8 per raft</li>
+                        <li>All safety gear provided</li>
+                    </ul>
+                    <a href="contact.html" class="book-btn" role="button"
+                        aria-label="Contact to book Gentle River Float">Contact to Book</a>
+                </article>
+
+                <article class="trip">
+                    <img src="images/rafting58_600.jpg" alt="Intermediate Rapids" class="trip-img">
                     <h2>Intermediate Rapids</h2>
-                    <p>For those with some rafting experience, this trip features exciting Class III rapids and
-                        beautiful surroundings.</p>
-                    <p><strong>Duration:</strong> 3 hours</p>
-                    <p><strong>Price:</strong> $75 per person</p>
-                </div>
-                <div class="trip">
-                    <img src="images/rafting49_600.jpg" alt="Advanced Whitewater Adventure" width="300">
+                    <p class="meta"><strong>Class:</strong> III • <strong>Duration:</strong> 3 hours • <strong>Price:</strong> $75
+                    </p>
+                    <p>A spirited run with technical rapids and fun drops. Ideal for paddlers with some experience or
+                        adventurous families with older kids.</p>
+                    <ul class="features">
+                        <li>Minimum age: 12</li>
+                        <li>Guides ride with each raft</li>
+                        <li>Photo package available</li>
+                    </ul>
+                    <a href="contact.html" class="book-btn" role="button"
+                        aria-label="Contact to book Intermediate Rapids">Contact to Book</a>
+                </article>
+
+                <article class="trip">
+                    <img src="images/rafting49_600.jpg" alt="Advanced Whitewater Adventure" class="trip-img">
                     <h2>Advanced Whitewater Adventure</h2>
-                    <p>Thrill-seekers will love this adrenaline-pumping trip through challenging Class IV and V
-                        rapids.</p>
-                    <p><strong>Duration:</strong> 4 hours</p>
-                    <p><strong>Price:</strong> $100 per person</p>
-                </div>
+                    <p class="meta"><strong>Class:</strong> IV–V • <strong>Duration:</strong> 4+ hours • <strong>Price:</strong> $100
+                    </p>
+                    <p>For experienced paddlers seeking high-adrenaline lines and big water. Expect technical maneuvers,
+                        powerful hydraulics and extended rapids.</p>
+                    <ul class="features">
+                        <li>Minimum age: 16</li>
+                        <li>Prior whitewater experience required</li>
+                        <li>Limited group size — advanced booking recommended</li>
+                    </ul>
+                    <a href="contact.html" class="book-btn" role="button"
+                        aria-label="Contact to book Advanced Whitewater Adventure">Contact to Book</a>
+                </article>
+
+                <article class="trip">
+                    <img src="images/rafting27_1024.jpg" alt="Sunset Serenity Paddle" class="trip-img">
+                    <h2>Sunset Serenity Paddle</h2>
+                    <p class="meta"><strong>Class:</strong> I • <strong>Duration:</strong> 90 minutes • <strong>Price:</strong> $45
+                    </p>
+                    <p>A relaxed evening float focused on scenery and wildlife. Perfect for couples and photographers —
+                        includes a short riverside snack stop.</p>
+                    <ul class="features">
+                        <li>All ages welcome</li>
+                        <li>Small-group experience</li>
+                        <li>Bring your camera</li>
+                    </ul>
+                    <a href="contact.html" class="book-btn" role="button"
+                        aria-label="Contact to book Sunset Serenity Paddle">Contact to Book</a>
+                </article>
             </div>
+
+            <aside class="trips-summary">
+                <h2>Trips at a Glance</h2>
+                <div class="table-wrap" aria-hidden="false">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Trip</th>
+                                <th>Class</th>
+                                <th>Duration</th>
+                                <th>Price</th>
+                                <th>Min Age</th>
+                                <th>Group Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gentle River Float</td>
+                                <td>I–II</td>
+                                <td>2 hrs</td>
+                                <td>$50</td>
+                                <td>6</td>
+                                <td>8 / raft</td>
+                            </tr>
+                            <tr>
+                                <td>Intermediate Rapids</td>
+                                <td>III</td>
+                                <td>3 hrs</td>
+                                <td>$75</td>
+                                <td>12</td>
+                                <td>8 / raft</td>
+                            </tr>
+                            <tr>
+                                <td>Advanced Whitewater Adventure</td>
+                                <td>IV–V</td>
+                                <td>4+ hrs</td>
+                                <td>$100</td>
+                                <td>16</td>
+                                <td>6–8 (limited)</td>
+                            </tr>
+                            <tr>
+                                <td>Sunset Serenity Paddle</td>
+                                <td>I</td>
+                                <td>90 min</td>
+                                <td>$45</td>
+                                <td>All ages</td>
+                                <td>6–10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="contact-cta">
+                    <p>Questions or ready to reserve your spot?</p>
+                    <a href="contact.html" class="cta-button" role="button"
+                        aria-label="Contact us to book a trip">Contact Us</a>
+                </div>
+            </aside>
         </section>
     </main>
 
