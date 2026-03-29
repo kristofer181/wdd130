@@ -6,6 +6,7 @@
     --body-font: Arial, serif;
 }
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,13 +20,20 @@ body {
     line-height: 1.5;
 }
 
-/* HEADER */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
 header {
     background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 
 header .logo img {
@@ -35,8 +43,8 @@ header .logo img {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* centered like wireframe */
-    gap: 20px;
+    justify-content: flex-end;
+    gap: 30px;
 }
 
 nav a {
@@ -53,43 +61,63 @@ nav a:hover {
     color: var(--background-color);
 }
 
-/* HERO */
+
+section {
+    margin-bottom: 20px;
+}
+
+
 .hero {
     background: white;
     margin: 20px 0;
-    padding: 20px;
+    padding: 25px 30px;
     border: 2px solid var(--primary-color);
-    border-radius: 8px;
+    border-radius: 6px;
+}
+
+.hero {
+    position: relative;
 }
 
 .hero h1 {
+    position: absolute;
+    top: -60px;
+    left: 16px;
+    right: 16px;
+    margin: 0;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 15px;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    z-index: 2;
 }
 
 .hero-content {
+    position: relative;
+    margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 20px;
+    grid-template-columns: 1fr 160px;
+    gap: 25px;
     align-items: center;
 }
 
 .hero-content p {
+    font-size: 0.95rem;
     text-align: left;
 }
 
 .hero-content img {
-    width: 100%;
-    max-width: 200px;
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
     border-radius: 6px;
 }
 
-/* HISTORY */
+
 .history {
     background: white;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 25px 30px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
 }
@@ -101,23 +129,26 @@ nav a:hover {
 
 .history-content {
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 160px 1fr;
+    gap: 30px;
     align-items: center;
 }
 
-.history-content img {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
+.history-content p {
+    font-size: 0.95rem;
 }
 
-/* ADVENTURE */
+.history-content img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
 .adventure {
     background: white;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 25px 30px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
 }
@@ -130,23 +161,33 @@ nav a:hover {
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 25px;
+    justify-items: center;
+}
+
+.adventure-gallery figure {
     text-align: center;
 }
 
 .adventure-gallery img {
-    width: 100%;
-    max-width: 120px;
-    margin: 0 auto;
+    width: 110px;
+    height: 90px;
+    object-fit: cover;
     border-radius: 6px;
 }
 
-/* FOOTER */
+.adventure-gallery figcaption {
+    margin-top: 6px;
+    font-size: 0.8rem;
+}
+
+
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 15px 30px;
     background-color: var(--secondary-color);
     color: var(--background-color);
 }
@@ -156,10 +197,10 @@ footer .socialmedia a {
 }
 
 footer img {
-    width: 20px;
+    width: 24px;
 }
 
-/* CONTACT PAGE */
+
 .company-info {
     margin: 20px 0;
     text-align: center;
@@ -207,7 +248,7 @@ footer img {
     border-radius: 4px;
 }
 
-/* MAP */
+
 .map-container {
     flex: 1;
     max-width: 600px;
@@ -220,7 +261,7 @@ footer img {
     border-radius: 8px;
 }
 
-/* TRIPS */
+
 .trips-layout {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -261,7 +302,7 @@ footer img {
     background: var(--secondary-color);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 880px) {
     .hero-content {
         grid-template-columns: 1fr;
