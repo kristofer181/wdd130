@@ -93,21 +93,20 @@ section {
     z-index: 2;
 }
 
-.hero-content {
-    position: relative;
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 160px;
-    gap: 25px;
-    align-items: center;
+.hero article {
+    position: absolute;
+    top: 4rem;
+    left: 30px;
+    right: 30px;
 }
 
-.hero-content p {
+.hero article p {
     font-size: 0.95rem;
     text-align: left;
 }
 
-.hero-content img {
+.hero article img {
+    float: right;
     width: 160px;
     height: 120px;
     object-fit: cover;
