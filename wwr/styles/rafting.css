@@ -70,10 +70,11 @@ section {
 .hero {
     background: white;
     margin: 20px 0;
-    padding: 25px 30px;
+    padding: 162px 30px;
     border: 2px solid var(--primary-color);
     border-radius: 6px;
 }
+
 
 .hero {
     position: relative;
@@ -95,22 +96,32 @@ section {
 
 .hero article {
     position: absolute;
-    top: 4rem;
-    left: 30px;
-    right: 30px;
+    
 }
 
-.hero article p {
+.hero-content {
+    position: relative;
+    margin-top: -4rem;
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 25px;
+    align-items: center;
+}
+
+.hero-content p {
     font-size: 0.95rem;
     text-align: left;
 }
 
-.hero article img {
-    float: right;
+.hero-content img {
     width: 160px;
     height: 120px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+.hero article img {
+    float: right;
 }
 
 
