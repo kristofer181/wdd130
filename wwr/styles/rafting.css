@@ -269,6 +269,20 @@ footer img {
 }
 
 
+.team {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team figure {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+}
+
+
 .trips-layout {
     display: grid;
     grid-template-columns: 1fr 360px;
