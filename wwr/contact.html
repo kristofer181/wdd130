@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="images/z-wwr-blue.jpg" alt="Rafting Logo" width="80">
+            <img src="images/z-wwr-blue.jpg" alt="Whitewater Rafting Company Logo" width="80">
         </div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -99,11 +99,13 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 White Water Rafting | Jan Kristofer A. Campol</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook-page"></a>
-            <a href="https://youtube.com"><img src="images/youtube.svg" alt="YouTube-page"></a>
-            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram-page"></a>
+        <div>
+            <p>&copy; 2026 White Water Rafting | Jan Kristofer A. Campol</p>
+        </div>
+        <nav class="socialmedia" aria-label="Social Media Links">
+            <a href="https://facebook.com" aria-label="Visit our Facebook page"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://youtube.com" aria-label="Visit our YouTube channel"><img src="images/youtube.svg" alt="YouTube"></a>
+            <a href="https://instagram.com" aria-label="Visit our Instagram profile"><img src="images/instagram.svg" alt="Instagram"></a>
         </nav>
     </footer>
 </body>
